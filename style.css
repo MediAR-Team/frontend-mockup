@@ -1,0 +1,217 @@
+:root {
+    --main-color: #3E3E3E;
+    --color-white: #FFFFFF;
+
+    --main-font-family: Montserrat;
+
+    --thin: 100;
+    --extralight: 200;
+    --light: 300;
+    --regular: 400;
+    --medium: 500;
+    --semibold: 600;
+    --bold: 700;
+    --extrabold: 800;
+    --black: 900;
+
+    --14: 14px;
+    --16: 16px;
+    --36: 36px;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: white;
+}
+
+.icon svg {
+    /*fill: var(--color-white);*/
+    height: 18px;
+    width: 18px;
+}
+
+/*.logo {
+    font-family: var(--main-font-family);
+    font-style: normal;
+    font-weight: var(--extrabold);
+    font-size: var(--36);
+    line-height: 44px;
+    color: var(--main-color);
+    left: 24px;
+    top: 32px;
+    position: relative;
+}
+
+.subLogo {
+    font-family: var(--main-font-family);
+    font-style: normal;
+    font-weight: var(--regular);
+    font-size: var(--14);
+    color: var(--main-color);
+}*/
+
+.navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 82px;
+    box-sizing: initial;
+    /*border-left: 5px solid #4d5bf9;*/
+    background: white;
+    transition: width 0.3s;
+    overflow-x: hidden;
+    box-shadow: 0 7px 57px rgba(0, 0, 0, 0.09);
+    border-radius: 0 20px 20px 0;
+}
+
+.navigation.actives {
+    width: 223px;
+}
+
+.navigation ul {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding-top: 40px;
+}
+
+.navigation ul li {
+    position: relative;
+    list-style: none;
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.navigation ul li.actives {
+    background: var(--main-color);
+    box-shadow: 0 7px 57px rgba(0, 0, 0, 0.09);
+    border-radius: 0 20px 20px 0;
+}
+
+/*.navigation ul li b:nth-child(1) {
+    position: absolute;
+    top: -20px;
+    height: 20px;
+    width: 100%;
+    background: white;
+    display: none;
+}
+
+.navigation ul li b:nth-child(1)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom-right-radius: 20px;
+    background: #4d5bf9;
+}
+
+.navigation ul li b:nth-child(2) {
+    position: absolute;
+    bottom: -20px;
+    height: 20px;
+    width: 100%;
+    background: white;
+    display: none;
+}
+
+.navigation ul li b:nth-child(2)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 20px;
+    background: #4d5bf9;
+}
+
+.navigation ul li.actives b:nth-child(1),
+.navigation ul li.actives b:nth-child(2) {
+    display: block;
+}*/
+
+.navigation ul li a {
+    position: relative;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: var(--main-color);
+    font-weight: var(--medium);
+    font-size: var(--16);
+    left: 32px;
+}
+
+.navigation ul .actives .title {
+    color: white;
+}
+
+.navigation ul .actives .icon {
+    fill: white;
+}
+
+.navigation ul li a .icon {
+    position: relative;
+    display: block;
+    min-width: 18px;
+    height: 52px;
+    line-height: 52px;
+    text-align: center;
+}
+
+.navigation ul li a .title {
+    position: relative;
+    display: block;
+    padding-left: 32px;
+    height: 52px;
+    line-height: 52px;
+    white-space: normal;
+}
+
+.toggle {
+    position: fixed;
+    top: 32px;
+    right: 32px;
+    width: 41px;
+    height: 44px;
+    background: var(--main-color);
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 7px 57px rgba(0, 0, 0, 0.09);
+}
+
+.toggle .svgs {
+    position: absolute;
+    display: none;
+}
+
+.iconSize {
+    height: 16px;
+    width: 9px;
+    fill: white;
+}
+
+.openBar,
+.toggle.actives .closeBar {
+    display: block;
+}
+
+.closeBar,
+.toggle.actives .openBar {
+    display: none;
+}
