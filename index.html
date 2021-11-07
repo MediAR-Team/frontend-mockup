@@ -39,10 +39,17 @@
     <svg id="openSidebar" width="9" height="16" viewBox="0 0 9 16" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M0.900181 -7.08109e-07C1.13057 -6.87968e-07 1.36096 0.0871083 1.53645 0.260439L8.73609 7.37145C9.08797 7.719 9.08797 8.28077 8.73609 8.62832L1.53645 15.7393C1.18457 16.0869 0.615794 16.0869 0.263912 15.7393C-0.0879706 15.3918 -0.0879705 14.83 0.263912 14.4825L6.82728 7.99989L0.263913 1.51731C-0.0879693 1.16976 -0.0879693 0.60799 0.263913 0.260439C0.439404 0.0871082 0.669792 -7.2825e-07 0.900181 -7.08109e-07" fill="white"/>
     </svg>
-
 </div>
 
 <div class="navigation">
+    <div class="toggle">
+        <svg class="iconSize openBar">
+            <use xlink:href="#openSidebar"></use>
+        </svg>
+        <svg class="iconSize svgs closeBar">
+            <use xlink:href="#closeSidebar"></use>
+        </svg>
+    </div>
     <ul>
         <li class="list actives">
             <!--<b></b>
@@ -119,23 +126,14 @@
     </ul>
 </div>
 
-<div class="toggle">
-    <svg class="iconSize openBar">
-        <use xlink:href="#openSidebar"></use>
-    </svg>
-    <svg class="iconSize svgs closeBar">
-        <use xlink:href="#closeSidebar"></use>
-    </svg>
-</div>
+
 
 <script>
 
     let menuToggle = document.querySelector('.toggle');
-    let logoToggle = document.querySelector('.sidebarTop');
     let navigation = document.querySelector('.navigation')
     menuToggle.onclick = function (){
         menuToggle.classList.toggle('actives');
-        logoToggle.classList.toggle('actives');
         navigation.classList.toggle('actives');
     }
 
