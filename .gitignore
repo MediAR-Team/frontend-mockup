@@ -1,2 +1,4 @@
 /bootstrap-4.6.1-dist/
 /node_modules/
+/.idea/
+/.sass-cache/
