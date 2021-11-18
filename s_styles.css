@@ -1,0 +1,47 @@
+@use "sass:math";
+.firstColor {
+  color: #3E3E3E; }
+
+.linkColor {
+  color: rgba(255, 255, 255, 0.8); }
+
+.s14 {
+  font-size: 14px; }
+
+.s16 {
+  font-size: 16px; }
+
+.s36 {
+  font-size: 36px; }
+
+.s42 {
+  font-size: 42px; }
+
+.regular {
+  font-weight: 400; }
+
+.medium {
+  font-weight: 500; }
+
+.semibold {
+  font-weight: 600; }
+
+.bold {
+  font-weight: 700; }
+
+.pt16 {
+  padding-top: 16px; }
+
+.pt24 {
+  padding-top: 24px; }
+
+.pt32 {
+  padding-top: 32px; }
+
+.pt64 {
+  padding-top: 64px; }
+
+.lh44 {
+  line-height: 44px; }
+
+/*# sourceMappingURL=s_styles.css.map */

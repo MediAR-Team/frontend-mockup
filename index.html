@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="s_styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
           integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 </head>
 <body>
 
 <div style="display: none">
-    <svg id="dashboard"  xmlns="http://www.w3.org/2000/svg">
+    <svg id="dashboard" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd"
               d="M4.5018 18C3.01064 18 1.8018 16.7912 1.8018 15.3V9.9H0.901804C0.0999899 9.9 -0.30156 8.93057 0.265408 8.3636L8.36541 0.263604C8.71688 -0.087868 9.28673 -0.087868 9.6382 0.263604L17.7382 8.3636C18.3052 8.93057 17.9036 9.9 17.1018 9.9H16.2018V15.3C16.2018 16.7912 14.993 18 13.5018 18H4.5018ZM9.00185 2.17255L3.01767 8.15673C3.35894 8.28463 3.60185 8.61383 3.60185 8.99975V15.2998C3.60185 15.7968 4.00479 16.1998 4.50185 16.1998L6.30184 16.1989L6.30185 12.5998C6.30185 11.6056 7.10774 10.7998 8.10185 10.7998H9.90185C10.896 10.7998 11.7018 11.6056 11.7018 12.5998L11.7018 16.1989L13.5018 16.1998C13.9989 16.1998 14.4018 15.7968 14.4018 15.2998V8.99975C14.4018 8.61383 14.6448 8.28463 14.986 8.15673L9.00185 2.17255ZM9.90173 12.6002H8.10173L8.10173 16.1993H9.90173L9.90173 12.6002Z"/>
     </svg>
@@ -33,120 +36,211 @@
         <path fill-rule="evenodd" clip-rule="evenodd"
               d="M8.00782 9.23565e-05L9.91807 0C9.97583 0.002681 10.0265 0.00928758 10.0978 0.024798C10.6202 0.138561 10.8188 0.326158 11.305 1.4751L11.3842 1.66463L11.6897 2.42176L11.7149 2.43209L12.1085 2.25387C12.9659 1.87044 13.4079 1.70893 13.705 1.66387L13.7666 1.65596L13.8788 1.6499C14.1464 1.6499 14.4189 1.74469 14.6275 1.90972L14.7261 1.99797L15.9474 3.21426L16.0323 3.304C16.4159 3.72661 16.4517 4.02622 16.0274 5.11819L15.8862 5.47047L15.5534 6.25801L15.5597 6.27338L16.3221 6.55811L16.6896 6.70339C17.6391 7.09161 17.8342 7.29852 17.9611 7.77381C17.9867 7.86964 17.9958 7.93493 17.9987 8.01597L18 8.10398V9.82111C18 9.94317 17.9958 10.0121 17.9658 10.1327C17.8394 10.6401 17.6519 10.8333 16.5109 11.3153L16.3227 11.3939L15.5709 11.6974L15.5656 11.71L15.8375 12.304C16.5135 13.8067 16.5372 14.1361 16.0928 14.631L16.0372 14.6913L14.7836 15.944C14.5592 16.1709 14.2395 16.2958 13.9301 16.2958C13.6674 16.2958 13.2547 16.1709 12.5513 15.8888L12.1747 15.7345L11.7458 15.5532L11.7212 15.5633L11.4996 16.1578C10.9569 17.5876 10.771 17.8198 10.2136 17.9637C10.1312 17.9849 10.0723 17.994 10.0054 17.9977L9.89509 18H8.17706C8.06984 18 8.00933 17.9968 7.90283 17.9737C7.38063 17.8605 7.18122 17.6725 6.69409 16.5228L6.61469 16.3332L6.30864 15.5757L6.28509 15.5659L5.71333 15.823C4.7988 16.2256 4.40261 16.3482 4.12025 16.3482C3.85583 16.3482 3.58657 16.2552 3.37237 16.0887L3.27014 15.9993L2.05059 14.7812L1.91132 14.6293C1.57687 14.2358 1.56043 13.9306 1.97094 12.8802L2.18486 12.3544L2.44599 11.7405L2.44055 11.7273L1.84935 11.507C0.663376 11.0569 0.297882 10.8496 0.124198 10.4711L0.0772186 10.352L0.0379756 10.2202C0.0157705 10.1359 0.00629412 10.0755 0.00244381 10.0068L0 9.89342V8.17527C0 8.05225 0.00426414 7.98271 0.0348949 7.86103C0.149095 7.4074 0.311185 7.20593 1.16502 6.82329L1.51889 6.67046L2.4276 6.30295L2.43382 6.28782L2.09407 5.53812C1.53345 4.26462 1.48702 3.87687 1.84073 3.44379L1.88912 3.38697L2.00373 3.26549L3.21855 2.05331C3.44112 1.82948 3.75948 1.7033 4.06935 1.7033C4.29098 1.7033 4.61641 1.79101 5.13725 1.9883L5.66123 2.19603L6.25526 2.44502L6.2796 2.43489L6.50294 1.8365C7.05065 0.396368 7.24615 0.155532 7.82389 0.0261894C7.89677 0.00987385 7.94875 0.00291725 8.00782 9.23565e-05ZM9.47063 1.79868H8.46719L8.32571 2.13039C8.27198 2.26226 8.21137 2.41629 8.14293 2.59508L7.82931 3.43408C7.7541 3.63271 7.61155 3.79723 7.4283 3.90013L7.33341 3.94632L6.59621 4.25312C6.41008 4.33057 6.20451 4.34287 6.01229 4.29011L5.89882 4.25066L5.02665 3.88299L4.55555 3.69511L4.23891 3.57823L3.52772 4.28788L3.61142 4.49931C3.64413 4.57895 3.68177 4.66799 3.7247 4.76718L3.86966 5.09596L4.23322 5.89082C4.3203 6.08011 4.33851 6.29247 4.2871 6.49181L4.2479 6.60957L3.94645 7.34217C3.86664 7.53613 3.7221 7.69507 3.53911 7.79308L3.44453 7.83689L2.46571 8.23039L1.97641 8.44015L1.79993 8.52188V9.53912L2.0111 9.63068C2.09104 9.66412 2.18082 9.70058 2.28122 9.74036L2.61513 9.86995L3.42651 10.1713C3.63107 10.245 3.80081 10.3899 3.90609 10.5774L3.95322 10.6746L4.25471 11.4051C4.33213 11.5926 4.34347 11.7997 4.28902 11.9928L4.24846 12.1067L3.89856 12.9279L3.67912 13.4695L3.57222 13.7572L4.28346 14.4676L4.49523 14.3839C4.57324 14.3521 4.65874 14.3164 4.75193 14.2767L5.40519 13.9886L5.8763 13.7717C6.07344 13.6775 6.29689 13.6587 6.50509 13.7165L6.60772 13.7518L7.34927 14.058C7.54582 14.1392 7.70619 14.2868 7.80359 14.4733L7.84692 14.5697L8.03146 15.0354L8.29407 15.6741L8.44605 16.0231L8.52846 16.2H9.53487L9.6786 15.8612L9.86578 15.3831L10.1706 14.5658C10.2458 14.3654 10.3894 14.1995 10.5742 14.0962L10.6699 14.0499L11.4083 13.7452C11.5923 13.6692 11.7951 13.6569 11.9852 13.7079L12.0975 13.7462L12.7928 14.0412L13.3002 14.2479L13.578 14.355L13.7612 14.4213L14.4733 13.7105L14.3361 13.3718L14.1302 12.9024L13.766 12.1082C13.6785 11.9185 13.6603 11.7057 13.7119 11.506L13.7513 11.388L14.0522 10.6586C14.1316 10.4661 14.2748 10.3082 14.4561 10.2102L14.5498 10.1663L15.3788 9.83297L15.802 9.65555L15.9184 9.60495L16.1999 9.47611V8.45987L15.9176 8.33935L15.5353 8.18802L14.5701 7.8287C14.366 7.75443 14.1969 7.60936 14.0921 7.4218L14.0452 7.3246L13.7443 6.5912C13.6675 6.40409 13.6564 6.19774 13.7106 6.00527L13.751 5.89172L14.0305 5.23836C14.1032 5.06557 14.1665 4.91235 14.2212 4.77693L14.3192 4.52929L14.4261 4.2399L13.7145 3.53118L13.5025 3.61503C13.3854 3.66283 13.2511 3.71955 13.0987 3.78579L12.9403 3.85522L12.1097 4.23197C11.9208 4.31856 11.709 4.33657 11.5101 4.28528L11.3927 4.24619L10.6516 3.94155C10.4576 3.8618 10.2986 3.71729 10.2005 3.5343L10.1567 3.43972L9.89469 2.78411L9.70481 2.3248L9.59964 2.08052L9.47063 1.79868ZM9.00033 5.39912C10.9859 5.39912 12.5999 7.01299 12.5999 8.99868C12.5999 10.9845 10.9857 12.5998 9.00033 12.5998C7.01434 12.5998 5.3999 10.9848 5.3999 8.99868C5.3999 7.0127 7.01423 5.39912 9.00033 5.39912ZM9.0005 7.19912C8.00829 7.19912 7.20007 8.00696 7.20007 8.99851C7.20007 9.99051 8.00874 10.7995 9.0005 10.7995C9.99155 10.7995 10.8001 9.99036 10.8001 8.99851C10.8001 8.00711 9.992 7.19912 9.0005 7.19912Z"/>
     </svg>
-    <svg id="closeSidebar" width="9" height="16" viewBox="0 0 9 16"  xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.09982 16C7.86943 16 7.63904 15.9129 7.46355 15.7396L0.263912 8.62855C-0.0879706 8.281 -0.0879706 7.71923 0.263912 7.37168L7.46355 0.260663C7.81543 -0.0868877 8.38421 -0.0868877 8.73609 0.260663C9.08797 0.608214 9.08797 1.16998 8.73609 1.51753L2.17272 8.00011L8.73609 14.4827C9.08797 14.8302 9.08797 15.392 8.73609 15.7396C8.5606 15.9129 8.33021 16 8.09982 16" fill="white"/>
+    <svg id="closeSidebar" width="9" height="16" viewBox="0 0 9 16" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M8.09982 16C7.86943 16 7.63904 15.9129 7.46355 15.7396L0.263912 8.62855C-0.0879706 8.281 -0.0879706 7.71923 0.263912 7.37168L7.46355 0.260663C7.81543 -0.0868877 8.38421 -0.0868877 8.73609 0.260663C9.08797 0.608214 9.08797 1.16998 8.73609 1.51753L2.17272 8.00011L8.73609 14.4827C9.08797 14.8302 9.08797 15.392 8.73609 15.7396C8.5606 15.9129 8.33021 16 8.09982 16"
+              fill="white"/>
     </svg>
     <svg id="openSidebar" width="9" height="16" viewBox="0 0 9 16" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.900181 -7.08109e-07C1.13057 -6.87968e-07 1.36096 0.0871083 1.53645 0.260439L8.73609 7.37145C9.08797 7.719 9.08797 8.28077 8.73609 8.62832L1.53645 15.7393C1.18457 16.0869 0.615794 16.0869 0.263912 15.7393C-0.0879706 15.3918 -0.0879705 14.83 0.263912 14.4825L6.82728 7.99989L0.263913 1.51731C-0.0879693 1.16976 -0.0879693 0.60799 0.263913 0.260439C0.439404 0.0871082 0.669792 -7.2825e-07 0.900181 -7.08109e-07" fill="white"/>
+        <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M0.900181 -7.08109e-07C1.13057 -6.87968e-07 1.36096 0.0871083 1.53645 0.260439L8.73609 7.37145C9.08797 7.719 9.08797 8.28077 8.73609 8.62832L1.53645 15.7393C1.18457 16.0869 0.615794 16.0869 0.263912 15.7393C-0.0879706 15.3918 -0.0879705 14.83 0.263912 14.4825L6.82728 7.99989L0.263913 1.51731C-0.0879693 1.16976 -0.0879693 0.60799 0.263913 0.260439C0.439404 0.0871082 0.669792 -7.2825e-07 0.900181 -7.08109e-07"
+              fill="white"/>
     </svg>
 </div>
 
-<div class="navigation">
-    <div class="toggle">
-        <svg class="iconSize openBar">
-            <use xlink:href="#openSidebar"></use>
-        </svg>
-        <svg class="iconSize svgs closeBar">
-            <use xlink:href="#closeSidebar"></use>
-        </svg>
-    </div>
-    <ul>
-        <li class="list actives">
-            <!--<b></b>
-            <b></b>-->
-            <a href="#">
+
+<div class="" id="mySidebar">
+    <div class="navigation">
+        <div onclick="toggleNav()">
+            <div class="toggle">
+                <svg class="iconSize openBar">
+                    <use xlink:href="#openSidebar"></use>
+                </svg>
+                <svg class="iconSize svgs closeBar">
+                    <use xlink:href="#closeSidebar"></use>
+                </svg>
+            </div>
+        </div>
+        <ul>
+            <li class="list actives">
+                <a href="#">
             <span class="icon">
                 <svg>
                     <use xlink:href="#dashboard"></use>
                 </svg>
             </span>
-                <span class="title">Dashboard</span>
-            </a>
-        </li>
-        <li class="list">
-            <!--<b></b>
-            <b></b>-->
-            <a href="#">
+                    <span class="title">Dashboard</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
             <span class="icon">
                 <svg>
                     <use xlink:href="#courses"></use>
                 </svg>
             </span>
-                <span class="title">Courses</span>
-            </a>
-        </li>
-        <li class="list">
-            <!--<b></b>
-            <b></b>-->
-            <a href="#">
+                    <span class="title">Courses</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
             <span class="icon">
                 <svg>
                     <use xlink:href="#resources"></use>
                 </svg>
             </span>
-                <span class="title">Resources</span>
-            </a>
-        </li>
-        <li class="list">
-            <!--<b></b>
-            <b></b>-->
-            <a href="#">
+                    <span class="title">Resources</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
             <span class="icon">
                 <svg>
                     <use xlink:href="#calendar"></use>
                 </svg>
             </span>
-                <span class="title">Calendar</span>
-            </a>
-        </li>
-        <li class="list">
-            <!--<b></b>
-            <b></b>-->
-            <a href="#">
+                    <span class="title">Calendar</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
             <span class="icon">
                 <svg>
                     <use xlink:href="#progress"></use>
                 </svg>
             </span>
-                <span class="title">Progress</span>
-            </a>
-        </li>
-        <li class="list">
-            <!--<b></b>
-            <b></b>-->
-            <a href="#">
+                    <span class="title">Progress</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
             <span class="icon">
                 <svg>
                     <use xlink:href="#settings"></use>
                 </svg>
             </span>
-                <span class="title">Settings</span>
-            </a>
-        </li>
-    </ul>
+                    <span class="title">Settings</span>
+                </a>
+            </li>
+        </ul>
+    </div>
 </div>
 
+<div id="main">
+    <div class="container-fluid p-0">
+        <div class="row no-gutters pt32">
+            <div class="col">
+                <span class="text-white s42 semibold">Courses</span>
+            </div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col">
+                <div class="nav medium s14 pt24">
+                    <a class="nav-link tablink bold text-white pl-0" title="All"
+                       onclick="openCategory(event,'All')">All</a>
+                    <a class="nav-link tablink" title="In Progress" onclick="openCategory(event,'InProgress')">In
+                        Progress</a>
+                    <a class="nav-link tablink" title="Completed"
+                       onclick="openCategory(event,'Completed')">Completed</a>
+                    <a class="nav-link tablink" title="Ended" onclick="openCategory(event,'Ended')">Ended</a>
+                </div>
+            </div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col-6 pt64">
+                <ul class="list-unstyled">
+                    <li>
+                        <span class="text-white s36 semibold">Computer Science Fundamentials</span>
+                    </li>
+                    <li class="pt16">
+                        <span class="text-white s16 semibold pr-2">Teachers:</span>
+                        <span class="text-white s16 regular pr-2">John Doe</span>
+                        <span class="text-white s16 regular pr-2">Jane Doe</span>
+                    </li>
+                    <li class="pt32">
+                        <span class="text-white medium s16 ">
+                            Головні архітектурні принципи побудови комп’ютерних мереж. Середовища передавання, сигнали та коди. Методи доступу. Протоколи стеку TCP/IP. Структурні вирішення КМ. Мережеве керування та адміністрування. Технології локальних, глобальних, інтерфейсних мереж та мереж доступу. Безпровідні мережеві технології. Безпека даних у комп’ютерних мережах.
+                        </span>
+                    </li>
+                    <li class="pt64">
+                        <button>Continue</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-6">
 
+                <div id="All" class="category">
+                    <h2>London</h2>
+                    <p>London is the capital city of England.</p>
+                </div>
+
+                <div id="InProgress" class="category" style="display:none">
+                    <h2>Paris</h2>
+                    <p>Paris is the capital of France.</p>
+                </div>
+
+                <div id="Completed" class="category" style="display:none">
+                    <h2>Tokyo</h2>
+                    <p>Tokyo is the capital of Japan.</p>
+                </div>
+
+                <div id="Ended" class="category" style="display:none">
+                    <h2>Tokyo</h2>
+                    <p>Tokyo is the capital of Japan.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script>
+    function openCategory(evt, categoryName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("category");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" bold text-white", "");
+        }
+        document.getElementById(categoryName).style.display = "block";
+        evt.currentTarget.className += " bold text-white";
+    }
+</script>
+
+<script>
+    function toggleNav() {
+        let sidenav = document.getElementById("mySidebar"),
+            main = document.getElementById("main");
+
+        main.style.marginLeft = main.style.marginLeft === "267px" ? '126px' : '267px';
+    }
+</script>
 
 <script>
 
     let menuToggle = document.querySelector('.toggle');
     let navigation = document.querySelector('.navigation')
-    menuToggle.onclick = function (){
+    let mainContent = document.querySelector('.mainContent')
+    menuToggle.onclick = function () {
         menuToggle.classList.toggle('actives');
         navigation.classList.toggle('actives');
+        mainContent.classList.toggle('actives');
     }
 
-    let list= document.querySelectorAll('.list');
-    for (let i=0; i<list.length;i++){
-        list[i].onclick = function(){
+    let list = document.querySelectorAll('.list');
+    for (let i = 0; i < list.length; i++) {
+        list[i].onclick = function () {
             let j = 0;
-            while(j < list.length){
+            while (j < list.length) {
                 list[j++].className = 'list';
             }
             list[i].className = 'list actives'
         }
     }
 </script>
+
+
 </body>
 </html>
