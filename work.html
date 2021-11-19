@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
           integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 </head>
-<body class="courses">
+<body>
 
 <div style="display: none">
     <svg id="dashboard" xmlns="http://www.w3.org/2000/svg">
@@ -45,6 +45,12 @@
               d="M0.900181 -7.08109e-07C1.13057 -6.87968e-07 1.36096 0.0871083 1.53645 0.260439L8.73609 7.37145C9.08797 7.719 9.08797 8.28077 8.73609 8.62832L1.53645 15.7393C1.18457 16.0869 0.615794 16.0869 0.263912 15.7393C-0.0879706 15.3918 -0.0879705 14.83 0.263912 14.4825L6.82728 7.99989L0.263913 1.51731C-0.0879693 1.16976 -0.0879693 0.60799 0.263913 0.260439C0.439404 0.0871082 0.669792 -7.2825e-07 0.900181 -7.08109e-07"
               fill="white"/>
     </svg>
+    <svg id="plus" width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M6 0C6.41421 0 6.75 0.335786 6.75 0.75V5.25H11.25C11.6642 5.25 12 5.58579 12 6C12 6.41421 11.6642 6.75 11.25 6.75H6.75V11.25C6.75 11.6642 6.41421 12 6 12C5.58579 12 5.25 11.6642 5.25 11.25V6.75H0.75C0.335786 6.75 0 6.41421 0 6C0 5.58579 0.335786 5.25 0.75 5.25H5.25V0.75C5.25 0.335786 5.58579 0 6 0Z"
+              fill="#FF177B"/>
+    </svg>
+
 </div>
 
 
@@ -62,7 +68,7 @@
         </div>
         <ul>
             <li class="list actives">
-                <a href="lection.html">
+                <a href="#">
             <span class="icon">
                 <svg>
                     <use xlink:href="#dashboard"></use>
@@ -72,7 +78,7 @@
                 </a>
             </li>
             <li class="list">
-                <a href="#">
+                <a href="index.html">
             <span class="icon">
                 <svg>
                     <use xlink:href="#courses"></use>
@@ -82,7 +88,7 @@
                 </a>
             </li>
             <li class="list">
-                <a href="work.html">
+                <a href="#">
             <span class="icon">
                 <svg>
                     <use xlink:href="#resources"></use>
@@ -127,87 +133,53 @@
 
 <div id="main">
     <div class="container-fluid p-0">
-        <div class="row no-gutters pt32">
-            <div class="col">
-                <span class="text-white s42 semibold">Courses</span>
-            </div>
-        </div>
-        <div class="row no-gutters">
-            <div class="col">
-                <div class="nav medium s14 pt24">
-                    <a class="nav-link tablink bold text-white pl-0" title="All"
-                       onclick="openCategory(event,'All')">All</a>
-                    <a class="nav-link tablink" title="In Progress" onclick="openCategory(event,'InProgress')">In
-                        Progress</a>
-                    <a class="nav-link tablink" title="Completed"
-                       onclick="openCategory(event,'Completed')">Completed</a>
-                    <a class="nav-link tablink" title="Ended" onclick="openCategory(event,'Ended')">Ended</a>
-                </div>
-            </div>
-        </div>
-        <div class="row no-gutters">
-            <div class="col-6 pt64">
-                <ul class="list-unstyled">
-                    <li>
-                        <span class="text-white s36 semibold">Computer Science Fundamentials</span>
-                    </li>
-                    <li class="pt16">
-                        <span class="text-white s16 semibold pr-2">Teachers:</span>
-                        <span class="text-white s16 regular pr-2">John Doe</span>
-                        <span class="text-white s16 regular pr-2">Jane Doe</span>
-                    </li>
-                    <li class="pt32">
-                        <span class="text-white medium s16 ">
-                            Головні архітектурні принципи побудови комп’ютерних мереж. Середовища передавання, сигнали та коди. Методи доступу. Протоколи стеку TCP/IP. Структурні вирішення КМ. Мережеве керування та адміністрування. Технології локальних, глобальних, інтерфейсних мереж та мереж доступу. Безпровідні мережеві технології. Безпека даних у комп’ютерних мережах.
-                        </span>
-                    </li>
-                    <li class="pt64">
-                        <button>Continue</button>
-                    </li>
+        <div class="row no-gutters pt24">
+            <div class="col-lg-6 col-md-8">
+                <ul class="brcbs m-0">
+                    <li><a href="#" class="regular s12 firstColor50 text-decoration-none">Courses</a></li>
+                    <li><a href="#" class="regular s12 firstColor50 text-decoration-none">Computer Science
+                        Fundamentials</a></li>
+                    <li class="regular s12 firstColor text-decoration-none">Робота. Beautiful Places</li>
                 </ul>
             </div>
+        </div>
+        <div class="row no-gutters pt24">
+            <div class="col-8">
+                <span class="firstColor s24 semibold">Робота. Beautiful Places</span>
+            </div>
+        </div>
+        <div class="row no-gutters pt8">
             <div class="col-6">
-
-                <div id="All" class="category">
-                    <h2>London</h2>
-                    <p>London is the capital city of England.</p>
-                </div>
-
-                <div id="InProgress" class="category" style="display:none">
-                    <h2>Paris</h2>
-                    <p>Paris is the capital of France.</p>
-                </div>
-
-                <div id="Completed" class="category" style="display:none">
-                    <h2>Tokyo</h2>
-                    <p>Tokyo is the capital of Japan.</p>
-                </div>
-
-                <div id="Ended" class="category" style="display:none">
-                    <h2>Tokyo</h2>
-                    <p>Tokyo is the capital of Japan.</p>
+                <span class="firstColor s14 regular">Due:</span>
+                <span class="firstColor s14 medium">27 December 2022,</span>
+                <span class="firstColor s14 medium">18:00</span>
+                <p class="s16 regular firstColor pt24">Please upload files activity, you're asked to submit some work
+                    and later assess 4 submissions from other participants.</p>
+            </div>
+            <div class="col-3"></div>
+            <div class="col-3">
+                <span class="firstColor s16 medium">Grade</span>
+                <div>
+                    <span class="firstColor50 s30 semibold">0</span>
+                    <span class="firstColor s30 semibold">/</span>
+                    <span class="firstColor s30 semibold">10.0</span>
                 </div>
             </div>
-
+        </div>
+        <div class="row no-gutters pt16">
+            <div class="col">
+                <a href="#" class="text-decoration-none">
+                    <span class="mr-2">
+                        <svg width="12" height="14">
+                            <use xlink:href="#plus"></use>
+                        </svg>
+                    </span>
+                    <span class="secondColor s16 medium">Add submission</span>
+                </a>
+            </div>
         </div>
     </div>
 </div>
-<script>
-    function openCategory(evt, categoryName) {
-        var i, x, tablinks;
-        x = document.getElementsByClassName("category");
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tablink");
-        for (i = 0; i < x.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" bold text-white", "");
-        }
-        document.getElementById(categoryName).style.display = "block";
-        evt.currentTarget.className += " bold text-white";
-    }
-</script>
-
 <script>
     function toggleNav() {
         let sidenav = document.getElementById("mySidebar"),

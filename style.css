@@ -48,30 +48,9 @@ body .courses {
 }
 
 .icon svg {
-    /*fill: var(--color-white);*/
     height: 18px;
     width: 18px;
 }
-
-/*.logo {
-    font-family: var(--main-font-family);
-    font-style: normal;
-    font-weight: var(--extrabold);
-    font-size: var(--36);
-    line-height: 44px;
-    color: var(--main-color);
-    left: 24px;
-    top: 32px;
-    position: relative;
-}
-
-.subLogo {
-    font-family: var(--main-font-family);
-    font-style: normal;
-    font-weight: var(--regular);
-    font-size: var(--14);
-    color: var(--main-color);
-}*/
 
 .navigation {
     position: fixed;
