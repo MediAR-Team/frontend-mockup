@@ -2,14 +2,23 @@
 .firstColor {
   color: #3E3E3E; }
 
+.firstColor50 {
+  color: rgba(62, 62, 62, 0.5); }
+
 .linkColor {
   color: rgba(255, 255, 255, 0.8); }
+
+.s12 {
+  font-size: 12px; }
 
 .s14 {
   font-size: 14px; }
 
 .s16 {
   font-size: 16px; }
+
+.s18 {
+  font-size: 18px; }
 
 .s36 {
   font-size: 36px; }
@@ -41,7 +50,16 @@
 .pt64 {
   padding-top: 64px; }
 
+.pt96 {
+  padding-top: 96px; }
+
 .lh44 {
   line-height: 44px; }
+
+.lh160 {
+  line-height: 160%; }
+
+.lh190 {
+  line-height: 190%; }
 
 /*# sourceMappingURL=s_styles.css.map */

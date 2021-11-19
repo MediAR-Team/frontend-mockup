@@ -37,7 +37,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-body {
+body .courses {
     min-height: 100vh;
     /*background-color: white;*/
     background-image: url('Images/course_image_1.jpg');
@@ -261,4 +261,20 @@ body {
     height: 0;
     overflow: hidden;
     visibility: hidden;
+}
+
+.brcbs {
+    list-style: none;
+}
+.brcbs li {
+    display: inline;
+}
+.brcbs li+li:before {
+    padding: 8px;
+    content: url("Icons/Breadcrumb_Separate.svg");
+}
+
+.brcbs li a:hover {
+    color: #3e3e3e;
+    text-decoration: none;
 }

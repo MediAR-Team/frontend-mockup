@@ -1,9 +1,7 @@
 @use "sass:math"
 
-$main-color: #3E3E3E
+$firstColor: #3E3E3E
 $color-white: #FFFFFF
-
-$linkColor: #FFFFFF 80%
 
 $main-font-family: Montserrat
 
@@ -17,28 +15,43 @@ $bold: 700
 $extrabold: 800
 $black: 900
 
+$s12: 12px
 $s14: 14px
 $s16: 16px
+$s18: 18px
 $s24: 24px
 $s32: 32px
 $s36: 36px
 $s42: 42px
 $s44: 44px
 $s64: 64px
+$s96: 96px
 
+
+$lh160: 160%
+$lh190: 190%
 
 
 .firstColor
-  color: $main-color
+  color: $firstColor
+
+.firstColor50
+  color: rgba(62, 62, 62, 0.5)
 
 .linkColor
   color: rgba(255, 255, 255, 0.8)
+
+.s12
+  font-size: $s12
 
 .s14
   font-size: $s14
 
 .s16
   font-size: $s16
+
+.s18
+  font-size: $s18
 
 .s36
   font-size: $s36
@@ -70,5 +83,14 @@ $s64: 64px
 .pt64
   padding-top: $s64
 
+.pt96
+  padding-top: $s96
+
 .lh44
   line-height: $s44
+
+.lh160
+  line-height: $lh160
+
+.lh190
+  line-height: $lh190
