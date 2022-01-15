@@ -5,11 +5,17 @@
 .secondColor {
   color: #FF177B; }
 
+.white {
+  color: white; }
+
 .firstColor50 {
   color: rgba(62, 62, 62, 0.5); }
 
 .linkColor {
   color: rgba(255, 255, 255, 0.8); }
+
+.shadow {
+  box-shadow: 0 7px 57px rgba(0, 0, 0, 0.09); }
 
 .s12 {
   font-size: 12px; }
@@ -22,6 +28,9 @@
 
 .s18 {
   font-size: 18px; }
+
+.s20 {
+  font-size: 20px; }
 
 .s24 {
   font-size: 24px; }
@@ -76,5 +85,20 @@
 
 .lh190 {
   line-height: 190%; }
+
+.block {
+  display: block; }
+
+.inline {
+  display: inline; }
+
+.inline-block {
+  display: inline-block; }
+
+.flex {
+  display: flex; }
+
+.ma {
+  margin: auto 0; }
 
 /*# sourceMappingURL=s_styles.css.map */
